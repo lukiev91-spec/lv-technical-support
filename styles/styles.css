@@ -1,0 +1,127 @@
+/* ========== 1. BASE ========== */
+.pagina {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    color: #111827;
+    background-color: #F4F6FA;
+    margin: 0;
+}
+
+/* ========== 2. TIPOGRAFÍA ========== */
+.pagina h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1A3FAF;
+}
+
+.pagina h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.pagina h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.pagina p {
+    line-height: 1.6;
+}
+/* ========== 3. HEADER Y MENÚ ========== */
+.encabezado {
+    background-color: #FFFFFF;
+    border-bottom: 4px solid #F59E0B;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.menu-lista {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-lista a {
+    color: #111827;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu-lista a:hover {
+    color: #1A3FAF;
+}
+/* ========== 4. CONTENIDO ========== */
+.contenido {
+    padding: 32px;
+}
+
+.seccion {
+    margin-bottom: 40px;
+}
+
+/* ========== 5. IMÁGENES ========== */
+.figura {
+    margin: 24px 0;
+}
+
+.figura-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.figura-texto {
+    font-size: 16px;
+    color: #4B5563;
+    margin-top: 8px;
+}
+/* ========== 6. SERVICIOS ========== */
+.servicio {
+    border-left: 6px solid #1A3FAF;
+    padding: 8px 20px;
+    margin-bottom: 24px;
+    transition: border-color 0.3s;
+}
+
+.servicio:hover {
+    border-left-color: #F59E0B;
+}
+/* ========== 7. FOOTER ========== */
+.pie {
+    background-color: #1A3FAF;
+    color: #FFFFFF;
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.pie-lista {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.pie-lista a {
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.pie-lista a:hover {
+    color: #F59E0B;
+}
