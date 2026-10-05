@@ -1,12 +1,20 @@
+/* ========== 0. RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* ========== 1. BASE ========== */
 .pagina {
     font-family: 'Rajdhani', sans-serif;
     font-size: 18px;
     color: #111827;
     background-color: #F4F6FA;
-    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
 /* ========== 2. TIPOGRAFÍA ========== */
 .pagina h1 {
     font-size: 40px;
@@ -27,11 +35,12 @@
 .pagina p {
     line-height: 1.6;
 }
+
 /* ========== 3. HEADER Y MENÚ ========== */
 .encabezado {
     background-color: #FFFFFF;
     border-bottom: 4px solid #F59E0B;
-    padding: 16px 32px;
+    padding: 20px 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,8 +53,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    margin: 0;
-    padding: 0;
 }
 
 .menu-lista a {
@@ -58,23 +65,33 @@
 .menu-lista a:hover {
     color: #1A3FAF;
 }
+
 /* ========== 4. CONTENIDO ========== */
 .contenido {
     padding: 32px;
+    flex: 1;
 }
 
 .seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     margin-bottom: 40px;
 }
 
 /* ========== 5. IMÁGENES ========== */
 .figura {
-    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .figura-img {
+    width: 400px;
     max-width: 100%;
     height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -82,19 +99,30 @@
 .figura-texto {
     font-size: 16px;
     color: #4B5563;
-    margin-top: 8px;
 }
+
 /* ========== 6. SERVICIOS ========== */
+.servicios-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .servicio {
+    flex: 1;
+    min-width: 250px;
     border-left: 6px solid #1A3FAF;
-    padding: 8px 20px;
-    margin-bottom: 24px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     transition: border-color 0.3s;
 }
 
 .servicio:hover {
     border-left-color: #F59E0B;
 }
+
 /* ========== 7. FOOTER ========== */
 .pie {
     background-color: #1A3FAF;
@@ -112,8 +140,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    margin: 0;
-    padding: 0;
 }
 
 .pie-lista a {
