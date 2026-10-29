@@ -40,13 +40,7 @@
 .encabezado {
     background-color: #FFFFFF;
     border-bottom: 4px solid #F59E0B;
-    padding: 20px 32px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 16px;
-    flex-direction: column;
+    padding: 8px 32px;
 }
 
 .menu-lista {
@@ -55,6 +49,8 @@
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .menu-lista a {
@@ -68,7 +64,7 @@
     text-decoration-color: #1A3FAF;
     text-decoration-thickness: 3px;
     text-underline-offset: 6px;
-    transition: background-color 0.2s;
+    transition: color 0.2s, background-color 0.2s;
 }
 
 .menu-lista a:hover {
@@ -158,12 +154,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    margin: 0;
+    padding: 0;
 }
 
 .pie-lista a {
     color: #FFFFFF;
     font-weight: 600;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 .pie-lista a:hover {
@@ -204,9 +203,6 @@
 /* ========== 9. RESPONSIVE: ESCRITORIO ========== */
 @media (min-width: 1024px) {
 
-    .encabezado {
-        flex-direction: row;
-    }
 
     .seccion-principal {
         grid-template-columns: 1fr 1fr;
@@ -220,4 +216,32 @@
     .servicios-contenedor {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/* ========== 10. ESTADOS INTERACTIVOS ========== */
+.menu-lista a:focus,
+.pie-lista a:focus {
+    outline: 2px solid #F59E0B;
+    outline-offset: 4px;
+}
+
+.pie-lista a:active {
+    color: #111827;
+}
+
+.navbar-toggler {
+    border: 2px solid #1A3FAF;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.navbar-toggler:hover {
+    background-color: #F4F6FA;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.5);
+}
+
+.navbar-toggler:active {
+    background-color: #F59E0B;
 }
