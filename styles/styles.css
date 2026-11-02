@@ -1,344 +1,339 @@
+@charset "UTF-8";
 /* ========== 0. RESET ========== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* ========== 1. BASE ========== */
 .pagina {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 24px;
-    color: #111827;
-    background-color: #F4F6FA;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  color: #111827;
+  background-color: #F4F6FA;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 /* ========== 2. TIPOGRAFÍA ========== */
 .pagina h1 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #1A3FAF;
+  font-size: 40px;
+  font-weight: 700;
+  color: #1A3FAF;
 }
 
 .pagina h2 {
-    font-size: 30px;
-    font-weight: 600;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .pagina h3 {
-    font-size: 22px;
-    font-weight: 600;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .pagina p {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 /* ========== 3. HEADER Y MENÚ ========== */
 .encabezado {
-    background-color: #FFFFFF;
-    border-bottom: 4px solid #F59E0B;
-    padding: 8px 32px;
+  background-color: #FFFFFF;
+  border-bottom: 4px solid #F59E0B;
+  padding: 8px 32px;
 }
 
 .menu-lista {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-lista a {
-    color: #111827;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    padding: 6px 12px;
-    border-radius: 6px;
-    text-decoration: underline;
-    text-decoration-color: #1A3FAF;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 6px;
-    transition: color 0.2s, background-color 0.2s;
+  color: #111827;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: underline;
+  text-decoration-color: #1A3FAF;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .menu-lista a:hover {
-    color: #1A3FAF;
+  color: #1A3FAF;
 }
 
 .menu-lista a:active {
-    background-color: #F59E0B;
-    color: #111827;
+  background-color: #F59E0B;
+  color: #111827;
 }
 
 /* ========== 4. CONTENIDO ========== */
 .contenido {
-    padding: 32px;
-    flex: 1;
+  padding: 32px;
+  flex: 1;
 }
 
 .seccion {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
 }
 
 /* ========== 5. IMÁGENES ========== */
 .figura {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .figura-img {
-    width: 400px;
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .figura-texto {
-    font-size: 16px;
-    color: #4B5563;
+  font-size: 16px;
+  color: #4B5563;
 }
 
 /* ========== 6. SERVICIOS ========== */
 .servicios-contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .servicio {
-    border-left: 6px solid #1A3FAF;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    transition: border-color 0.3s;
+  border-left: 6px solid #1A3FAF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.3s;
 }
 
 .servicio ul {
-    padding-left: 20px;
-    line-height: 1.6;
+  padding-left: 20px;
+  line-height: 1.6;
 }
 
 .servicio:hover {
-    border-left-color: #F59E0B;
+  border-left-color: #F59E0B;
 }
 
 /* ========== 7. FOOTER ========== */
 .pie {
-    background-color: #1A3FAF;
-    color: #FFFFFF;
-    padding: 24px 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
+  background-color: #1A3FAF;
+  color: #FFFFFF;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .pie-lista {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .pie-lista a {
-    color: #FFFFFF;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.2s;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 .pie-lista a:hover {
-    color: #F59E0B;
+  color: #F59E0B;
 }
+
 /* ========== 8. GRID SECCIÓN PRINCIPAL ========== */
 .seccion-principal {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "titulo"
-        "foto"
-        "texto"
-        "extra";
-    align-items: center;
-    gap: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "titulo" "foto" "texto" "extra";
+  align-items: center;
+  gap: 24px;
 }
 
 .seccion-principal h1 {
-    grid-area: titulo;
-    text-align: center;
+  grid-area: titulo;
+  text-align: center;
 }
 
 .seccion-principal .figura {
-    grid-area: foto;
+  grid-area: foto;
 }
 
 .seccion-principal > p {
-    grid-area: texto;
-    text-align: center;
-    max-width: 500px;
-    justify-self: center;
+  grid-area: texto;
+  text-align: center;
+  max-width: 500px;
+  justify-self: center;
 }
 
 .seccion-principal .servicio {
-    grid-area: extra;
+  grid-area: extra;
 }
+
 /* ========== 9. RESPONSIVE: ESCRITORIO ========== */
 @media (min-width: 1024px) {
-
-
-    .seccion-principal {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "titulo texto"
-            "foto   texto"
-            "extra  extra";
-        gap: 24px;
-    }
-
-    .servicios-contenedor {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .seccion-principal {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo texto" "foto   texto" "extra  extra";
+    gap: 24px;
+  }
+  .servicios-contenedor {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
 /* ========== 10. ESTADOS INTERACTIVOS ========== */
 .menu-lista a:focus,
 .pie-lista a:focus {
-    outline: 2px solid #F59E0B;
-    outline-offset: 4px;
+  outline: 2px solid #F59E0B;
+  outline-offset: 4px;
 }
 
 .pie-lista a:active {
-    color: #111827;
+  color: #111827;
 }
 
 .navbar-toggler {
-    border: 2px solid #1A3FAF;
-    transition: background-color 0.2s, box-shadow 0.2s;
+  border: 2px solid #1A3FAF;
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 .navbar-toggler:hover {
-    background-color: #F4F6FA;
+  background-color: #F4F6FA;
 }
 
 .navbar-toggler:focus {
-    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.5);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.5);
 }
 
 .navbar-toggler:active {
-    background-color: #F59E0B;
+  background-color: #F59E0B;
 }
 
 /* ========== 11. GALERÍA (CAROUSEL DE BOOTSTRAP) ========== */
 .galeria {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .galeria-img {
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .galeria-texto {
-    background-color: rgba(17, 24, 39, 0.75);
-    border-radius: 8px;
-    padding: 8px 16px;
-    bottom: 40px;
+  background-color: rgba(17, 24, 39, 0.75);
+  border-radius: 8px;
+  padding: 8px 16px;
+  bottom: 40px;
 }
 
 .galeria-texto h3 {
-    color: #FFFFFF;
-    font-size: 20px;
+  color: #FFFFFF;
+  font-size: 20px;
 }
 
 .galeria-texto p {
-    margin: 0;
-    font-size: 16px;
+  margin: 0;
+  font-size: 16px;
 }
 
 .galeria .carousel-indicators [data-bs-target] {
-    background-color: #F59E0B;
+  background-color: #F59E0B;
 }
 
 .galeria .carousel-control-prev,
 .galeria .carousel-control-next {
-    width: 44px;
-    height: 44px;
-    top: 50%;
-    bottom: auto;
-    transform: translateY(-50%);
-    margin: 0 12px;
-    background-color: #1A3FAF;
-    border-radius: 50%;
-    opacity: 0.8;
-    transition: opacity 0.2s, background-color 0.2s;
+  width: 44px;
+  height: 44px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  margin: 0 12px;
+  background-color: #1A3FAF;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: opacity 0.2s, background-color 0.2s;
 }
 
 .galeria .carousel-control-prev:hover,
 .galeria .carousel-control-next:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .galeria .carousel-control-prev:focus,
 .galeria .carousel-control-next:focus {
-    opacity: 1;
-    outline: 2px solid #F59E0B;
-    outline-offset: 2px;
+  opacity: 1;
+  outline: 2px solid #F59E0B;
+  outline-offset: 2px;
 }
 
 .galeria .carousel-control-prev:active,
 .galeria .carousel-control-next:active {
-    background-color: #F59E0B;
+  background-color: #F59E0B;
 }
 
 /* ========== 12. ACORDEÓN (SOBRE MÍ) ========== */
 .acordeon .accordion-button {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #111827;
-    transition: background-color 0.2s, color 0.2s;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .acordeon .accordion-button:hover {
-    background-color: #F4F6FA;
+  background-color: #F4F6FA;
 }
 
 .acordeon .accordion-button:focus {
-    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.5);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.5);
 }
 
 .acordeon .accordion-button:active {
-    background-color: #F59E0B;
+  background-color: #F59E0B;
 }
 
 .acordeon .accordion-button:not(.collapsed) {
-    background-color: #1A3FAF;
-    color: #FFFFFF;
+  background-color: #1A3FAF;
+  color: #FFFFFF;
 }
 
 .acordeon .accordion-button:not(.collapsed)::after {
-    filter: brightness(0) invert(1);
-}
+  filter: brightness(0) invert(1);
+}/*# sourceMappingURL=styles.css.map */
