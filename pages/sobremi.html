@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEVULA TI | Sobre mí</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body class="pagina">
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../img/logoLevulaTi.png" alt="Logo de LEVULA TI" width="180">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto menu-lista">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hardware.html">Hardware</a></li>
+                        <li class="nav-item"><a class="nav-link" href="administracion.html">Administración</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <section class="seccion seccion-principal">
+            <h1>Sobre mí</h1>
+            <figure class="figura">
+                <img class="figura-img" src="../img/lucas.jpg" alt="Foto de Lucas Vargas" width="400">
+                <figcaption class="figura-texto">Lucas Vargas, técnico de soporte IT</figcaption>
+            </figure>
+            <p>Soy técnico de soporte IT con más de 2 años de experiencia en entornos corporativos. Mi objetivo es que cada persona pueda trabajar sin trabas: resuelvo incidentes, configuro equipos y acompaño a los usuarios para que entiendan sus herramientas. Actualmente me formo como Frontend Developer en Coderhouse, sumando HTML y CSS a mi perfil técnico.</p>
+            <article class="servicio">
+                <h2>Habilidades</h2>
+                <div class="accordion acordeon" id="habilidadesAcc">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#habilidad1" aria-expanded="true" aria-controls="habilidad1">
+                                Técnicas
+                            </button>
+                        </h3>
+                        <div id="habilidad1" class="accordion-collapse collapse show" data-bs-parent="#habilidadesAcc">
+                            <div class="accordion-body">
+                                <ul>
+                                <li>Windows y Office 365</li>
+                                <li>Active Directory: altas, bajas y permisos de usuarios</li>
+                                <li>Soporte remoto con herramientas de acceso a distancia</li>
+                                <li>Redes básicas: IPs, WiFi, impresoras y discos en red</li>
+                                <li>Backups y NAS</li>
+                                <li>Configuración de celulares a nivel software</li>
+                                <li>HTML y CSS (en formación)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#habilidad2" aria-expanded="false" aria-controls="habilidad2">
+                                Interpersonales
+                            </button>
+                        </h3>
+                        <div id="habilidad2" class="accordion-collapse collapse" data-bs-parent="#habilidadesAcc">
+                            <div class="accordion-body">
+                                <ul>
+                                <li>Comunicación clara con usuarios no técnicos</li>
+                                <li>Capacitación a usuarios</li>
+                                <li>Registro y seguimiento de tickets</li>
+                                <li>Trabajo en equipo y derivación de casos a otras áreas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2026 LEVULA TI. Todos los derechos reservados.</p>
+        <ul class="pie-lista">
+            <li><a href="mailto:lukiev91@gmail.com">lukiev91@gmail.com</a></li>
+            <li><a href="https://wa.me/5491132712980" target="_blank">WhatsApp: 11 3271-2980</a></li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
