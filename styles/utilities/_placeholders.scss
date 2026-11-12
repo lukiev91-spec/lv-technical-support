@@ -1,0 +1,13 @@
+@use '../utilities/variables' as *;
+
+// ========== PLACEHOLDERS (para usar con @extend) ==========
+
+// Lista horizontal sin viñetas: la usan el menú y el footer
+%lista-limpia {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $espacio * 3;
+    margin: 0;
+    padding: 0;
+}

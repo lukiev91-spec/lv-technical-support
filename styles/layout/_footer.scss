@@ -1,0 +1,46 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+@use '../utilities/placeholders';
+
+// ========== FOOTER ==========
+.pie {
+    background-color: $p-color;
+    color: $blanco;
+    padding: $espacio * 3 $espacio * 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: $espacio * 2;
+
+    @include desde($tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: $espacio * 3 $espacio * 4;
+    }
+}
+
+.pie-lista {
+    @extend %lista-limpia;
+    justify-content: center;
+
+    a {
+        color: $blanco;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color $transicion;
+
+        &:hover {
+            color: $acento;
+        }
+
+        &:focus {
+            @include foco;
+        }
+
+        &:active {
+            color: $oscuro;
+        }
+    }
+}

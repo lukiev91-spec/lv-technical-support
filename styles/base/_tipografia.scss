@@ -1,0 +1,37 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+// ========== TIPOGRAFÍA ==========
+.pagina {
+    h1 {
+        font-size: $espacio * 4;
+        font-weight: 700;
+        color: $p-color;
+
+        @include desde($tablet) {
+            font-size: $espacio * 4.5;
+        }
+
+        @include desde($escritorio) {
+            font-size: $espacio * 5;
+        }
+    }
+
+    h2 {
+        font-size: 26px;
+        font-weight: 600;
+
+        @include desde($tablet) {
+            font-size: 30px;
+        }
+    }
+
+    h3 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+}

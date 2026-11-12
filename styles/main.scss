@@ -1,0 +1,29 @@
+// =====================================================
+// MAIN.SCSS - único punto de entrada
+// Solo importa los partials, en orden: primero las
+// herramientas (utilities), después lo general (base),
+// la estructura (layout) y por último los componentes.
+// =====================================================
+
+// ---------- UTILITIES (no generan CSS por sí solos) ----------
+@use 'utilities/variables';
+@use 'utilities/mixins';
+@use 'utilities/placeholders';
+
+// ---------- BASE ----------
+@use 'base/reset';
+@use 'base/base';
+@use 'base/tipografia';
+
+// ---------- LAYOUT ----------
+@use 'layout/header';
+@use 'layout/contenido';
+@use 'layout/grid';
+@use 'layout/footer';
+
+// ---------- COMPONENTS ----------
+@use 'components/navbar';
+@use 'components/figura';
+@use 'components/servicios';
+@use 'components/galeria';
+@use 'components/acordeon';

@@ -1,0 +1,32 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+// ========== ACORDEÓN (SOBRE MÍ) ==========
+.acordeon .accordion-button {
+    font-family: $fuente;
+    font-size: 20px;
+    font-weight: 600;
+    color: $oscuro;
+    transition: background-color $transicion, color $transicion;
+
+    &:hover {
+        background-color: $fondo;
+    }
+
+    &:focus {
+        @include halo;
+    }
+
+    &:active {
+        background-color: $acento;
+    }
+
+    &:not(.collapsed) {
+        background-color: $p-color;
+        color: $blanco;
+
+        &::after {
+            filter: brightness(0) invert(1);
+        }
+    }
+}

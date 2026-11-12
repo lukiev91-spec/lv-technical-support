@@ -1,0 +1,23 @@
+// ========== VARIABLES ==========
+
+// Colores
+$p-color: #1A3FAF;   // color principal (azul del logo)
+$acento: #F59E0B;    // color de acento (naranja)
+$oscuro: #111827;    // texto principal
+$fondo: #F4F6FA;     // fondo de la página
+$blanco: #FFFFFF;    // blanco
+$gris: #4B5563;      // texto secundario (epígrafes)
+
+// Tipografía
+$fuente: 'Rajdhani', sans-serif;
+
+// Espaciado: todo se calcula a partir de esta unidad
+$espacio: 8px;
+
+// Bordes y animaciones
+$radio: 12px;
+$transicion: 0.3s ease;
+
+// Breakpoints (mobile-first)
+$tablet: 768px;
+$escritorio: 1024px;
