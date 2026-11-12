@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEVULA TI | Sobre mí</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body class="pagina">
     <header class="encabezado">
@@ -33,12 +34,12 @@
 
     <main class="contenido">
         <section class="seccion seccion-principal">
-            <h1>Sobre mí</h1>
-            <figure class="figura">
+            <h1 data-aos="fade-up">Sobre mí</h1>
+            <figure class="figura" data-aos="zoom-in">
                 <img class="figura-img" src="../img/lucas.jpg" alt="Foto de Lucas Vargas" width="400">
                 <figcaption class="figura-texto">Lucas Vargas, técnico de soporte IT</figcaption>
             </figure>
-            <p>Soy técnico de soporte IT con más de 2 años de experiencia en entornos corporativos. Mi objetivo es que cada persona pueda trabajar sin trabas: resuelvo incidentes, configuro equipos y acompaño a los usuarios para que entiendan sus herramientas. Actualmente me formo como Frontend Developer en Coderhouse, sumando HTML y CSS a mi perfil técnico.</p>
+            <p data-aos="fade-up" data-aos-delay="150">Soy técnico de soporte IT con más de 2 años de experiencia en entornos corporativos. Mi objetivo es que cada persona pueda trabajar sin trabas: resuelvo incidentes, configuro equipos y acompaño a los usuarios para que entiendan sus herramientas. Actualmente me formo como Frontend Developer en Coderhouse, sumando HTML y CSS a mi perfil técnico.</p>
             <article class="servicio">
                 <h2>Habilidades</h2>
                 <div class="accordion acordeon" id="habilidadesAcc">
@@ -92,5 +93,9 @@
         </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
 </body>
 </html>
