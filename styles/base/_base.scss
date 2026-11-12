@@ -1,0 +1,21 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+// ========== BASE ==========
+.pagina {
+    font-family: $fuente;
+    font-size: 20px;
+    color: $oscuro;
+    background-color: $fondo;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    @include desde($tablet) {
+        font-size: 22px;
+    }
+
+    @include desde($escritorio) {
+        font-size: 24px;
+    }
+}

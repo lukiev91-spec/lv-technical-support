@@ -1,0 +1,23 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+// ========== FIGURAS (foto + epígrafe) ==========
+.figura {
+    @include flex-columna($espacio);
+    align-items: center;
+}
+
+.figura-img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: $radio;
+    @include sombra;
+}
+
+.figura-texto {
+    font-size: 16px;
+    color: $gris;
+}

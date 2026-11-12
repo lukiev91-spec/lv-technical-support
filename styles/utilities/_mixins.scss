@@ -1,0 +1,36 @@
+@use '../utilities/variables' as *;
+
+// ========== MIXINS ==========
+
+// Media query mobile-first: aplica el contenido desde cierto ancho
+// Uso: @include desde($tablet) { ... }
+@mixin desde($ancho) {
+    @media (min-width: $ancho) {
+        @content;
+    }
+}
+
+// Sombra configurable: desplazamiento vertical, desenfoque y opacidad
+// Uso: @include sombra(10px, 24px, 0.18);
+@mixin sombra($y: 4px, $desenfoque: 12px, $opacidad: 0.15) {
+    box-shadow: 0 $y $desenfoque rgba(0, 0, 0, $opacidad);
+}
+
+// Columna flex con espacio entre hijos
+// Uso: @include flex-columna($espacio * 2);
+@mixin flex-columna($separacion: $espacio * 2) {
+    display: flex;
+    flex-direction: column;
+    gap: $separacion;
+}
+
+// Contorno visible para el foco del teclado
+@mixin foco($color: $acento, $separacion: 4px) {
+    outline: 2px solid $color;
+    outline-offset: $separacion;
+}
+
+// Halo de color alrededor de un botón (reemplaza el celeste de Bootstrap)
+@mixin halo($color: $acento) {
+    box-shadow: 0 0 0 3px rgba($color, 0.5);
+}

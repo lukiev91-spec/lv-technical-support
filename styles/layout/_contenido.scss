@@ -1,0 +1,21 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+// ========== CONTENIDO ==========
+.contenido {
+    padding: $espacio * 2;
+    flex: 1;
+
+    @include desde($tablet) {
+        padding: $espacio * 3;
+    }
+
+    @include desde($escritorio) {
+        padding: $espacio * 4;
+    }
+}
+
+.seccion {
+    @include flex-columna($espacio * 2);
+    margin-bottom: $espacio * 5;
+}

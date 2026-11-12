@@ -1,0 +1,79 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+// ========== GALERÍA (CAROUSEL DE BOOTSTRAP) ==========
+.galeria {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: $radio;
+    overflow: hidden;
+    @include sombra;
+
+    .carousel-indicators [data-bs-target] {
+        background-color: $acento;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 44px;
+        height: 44px;
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+        margin: 0 $espacio * 1.5;
+        background-color: $p-color;
+        border-radius: 50%;
+        opacity: 0.8;
+        transition: opacity $transicion, background-color $transicion;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:focus {
+            opacity: 1;
+            @include foco($acento, 2px);
+        }
+
+        &:active {
+            background-color: $acento;
+        }
+    }
+}
+
+.galeria-img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.galeria-texto {
+    background-color: rgba($oscuro, 0.75);
+    border-radius: $espacio;
+    padding: $espacio $espacio * 2;
+    bottom: $espacio * 3;
+
+    h3 {
+        color: $blanco;
+        font-size: 18px;
+    }
+
+    // En el celular solo se muestra el título, para que no tape la foto
+    p {
+        display: none;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    @include desde($tablet) {
+        bottom: $espacio * 5;
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            display: block;
+        }
+    }
+}
