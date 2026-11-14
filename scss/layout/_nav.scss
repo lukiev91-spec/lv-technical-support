@@ -2,17 +2,7 @@
 @use '../utilities/mixins' as *;
 @use '../utilities/placeholders';
 
-// ========== HEADER Y MENÚ ==========
-.encabezado {
-    background-color: $blanco;
-    border-bottom: 4px solid $acento;
-    padding: $espacio $espacio * 2;
-
-    @include desde($tablet) {
-        padding: $espacio $espacio * 4;
-    }
-}
-
+// ========== NAV: menú de la navbar de Bootstrap ==========
 .menu-lista {
     @extend %lista-limpia;
     justify-content: center;
@@ -42,5 +32,23 @@
             background-color: $acento;
             color: $oscuro;
         }
+    }
+}
+
+// ========== NAV: botón hamburguesa de Bootstrap ==========
+.navbar-toggler {
+    border: 2px solid $p-color;
+    transition: background-color $transicion, box-shadow $transicion;
+
+    &:hover {
+        background-color: $fondo;
+    }
+
+    &:focus {
+        @include halo;
+    }
+
+    &:active {
+        background-color: $acento;
     }
 }
