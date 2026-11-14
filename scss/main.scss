@@ -17,12 +17,12 @@
 
 // ---------- LAYOUT ----------
 @use 'layout/header';
+@use 'layout/nav';
 @use 'layout/contenido';
 @use 'layout/grid';
 @use 'layout/footer';
 
 // ---------- COMPONENTS ----------
-@use 'components/navbar';
 @use 'components/figura';
 @use 'components/servicios';
 @use 'components/galeria';

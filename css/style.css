@@ -104,6 +104,20 @@
   color: #111827;
 }
 
+.navbar-toggler {
+  border: 2px solid #1A3FAF;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar-toggler:hover {
+  background-color: #F4F6FA;
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.5);
+}
+.navbar-toggler:active {
+  background-color: #F59E0B;
+}
+
 .contenido {
   padding: 16px;
   flex: 1;
@@ -195,20 +209,6 @@
   color: #111827;
 }
 
-.navbar-toggler {
-  border: 2px solid #1A3FAF;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-.navbar-toggler:hover {
-  background-color: #F4F6FA;
-}
-.navbar-toggler:focus {
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.5);
-}
-.navbar-toggler:active {
-  background-color: #F59E0B;
-}
-
 .figura {
   display: flex;
   flex-direction: column;
@@ -221,8 +221,7 @@
   max-width: 100%;
   height: auto;
   aspect-ratio: 1/1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -318,8 +317,7 @@
 
 .galeria-img {
   aspect-ratio: 16/9;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .galeria-texto {
@@ -371,4 +369,4 @@
 }
 .acordeon .accordion-button:not(.collapsed)::after {
   filter: brightness(0) invert(1);
-}/*# sourceMappingURL=main.css.map */
+}
