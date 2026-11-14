@@ -28,11 +28,19 @@ https://lukiev91-spec.github.io/lv-technical-support/
 ```
 index.html
 pages/
-styles/
-  main.scss
-  utilities/
-  base/
-  layout/
-  components/
 img/
+css/
+  style.css          (CSS compilado, no se edita a mano)
+scss/
+  main.scss          (único punto de entrada)
+  utilities/         _variables, _mixins, _placeholders
+  base/              _reset, _base, _tipografia
+  layout/            _header, _nav, _contenido, _grid, _footer
+  components/        _figura, _servicios, _galeria, _acordeon
+```
+
+## Compilar el SCSS
+
+```
+npx sass scss/main.scss css/style.css --no-source-map
 ```
